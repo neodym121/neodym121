@@ -1,9 +1,9 @@
 name: Update profile README
 
 on:
-  # раз в сутки (время UTC)
+  # раз в сутки в 12:00 по Москве (в cron время UTC, Москва = UTC+3)
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "0 9 * * *"
   # кнопка «Run workflow» вручную
   workflow_dispatch:
   # при изменении самого скрипта или этого файла
