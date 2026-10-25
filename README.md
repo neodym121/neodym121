@@ -1,16 +1,14 @@
 # neodym
 
+<img align="right" src="./profile/top-langs.svg" alt="Top Languages">
+
 <!-- stats:start -->
 - **6** public repositories
 - **178** starred
 - **0** stars received
 <!-- stats:end -->
 
-<br>
-
-![Top Languages](./profile/top-langs.svg)
-
-<br>
+<br clear="right">
 
 ### projects
 
