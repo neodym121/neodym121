@@ -21,6 +21,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # карточка языков (тёмная тема, сам репозиторий профиля не считаем)
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=github_dark&border_color=30363d&exclude_repo=${{ github.repository_owner }}
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -35,8 +44,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain README.md)" ]; then
-            git add README.md
+          if [ -n "$(git status --porcelain README.md profile/top-langs.svg)" ]; then
+            git add README.md profile/top-langs.svg
             git commit -m "Update profile README"
             git push
           else

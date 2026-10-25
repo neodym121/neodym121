@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# обновляет цифры, языки и проекты в README профиля
+# обновляет цифры и проекты в README профиля
+# карточку языков (profile/top-langs.svg) рисует экшен в workflow
 
 import json
 import os
@@ -7,19 +8,12 @@ import re
 import sys
 import urllib.parse
 import urllib.request
-from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
 # настройки
 USERNAME = os.environ.get("GH_USER", "neodym121")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-# bytes — по объёму кода
-# repos — по числу репозиториев, где язык основной
-LANGUAGE_MODE = "bytes"
-MAX_LANGUAGES = 5
-IGNORE_LANGUAGES = set()       # например {"HTML", "CSS"} — эти языки не считаем
-BAR_WIDTH = 24
 
 MAX_PROJECTS = 10
 SKIP_FORKS = False
@@ -86,10 +80,6 @@ def get_starred_count():
     return int(match.group(1)) if match else len(data)
 
 
-def get_repo_languages(repo):
-    data, _ = api(f"/repos/{USERNAME}/{repo['name']}/languages")
-    return data
-
 def visible_repos(repos):
     repos = [r for r in repos
              if r["name"].lower() not in (USERNAME.lower(), ".github")
@@ -109,34 +99,6 @@ def short(text, limit=90):
     return text[:limit].rsplit(" ", 1)[0].rstrip(",.;:") + "…"
 
 
-# проценты так, чтобы в сумме было ровно 100
-def percents(values):
-    total = sum(values)
-    if not total:
-        return [0] * len(values)
-    raw = [v * 100 / total for v in values]
-    result = [int(x) for x in raw]
-    order = sorted(range(len(values)), key=lambda i: raw[i] - result[i], reverse=True)
-    for i in order[:100 - sum(result)]:
-        result[i] += 1
-    return result
-
-
-def collect_languages(repos):
-    counts = Counter()
-    if LANGUAGE_MODE == "repos":
-        for r in repos:
-            if r.get("language"):
-                counts[r["language"]] += 1
-    else:
-        for r in repos:
-            for lang, size in get_repo_languages(r).items():
-                counts[lang] += size
-    for lang in IGNORE_LANGUAGES:
-        counts.pop(lang, None)
-    return counts
-
-
 # куски README
 def section_stats(repos, starred):
     stars_received = sum(r.get("stargazers_count", 0) for r in repos)
@@ -145,23 +107,6 @@ def section_stats(repos, starred):
         f"- **{starred}** starred",
         f"- **{stars_received}** stars received",
     ])
-
-
-def section_languages(counts):
-    items = counts.most_common()
-    if len(items) > MAX_LANGUAGES:
-        rest = sum(size for _, size in items[MAX_LANGUAGES:])
-        items = items[:MAX_LANGUAGES] + [("other", rest)]
-    if not items:
-        return "```\n```"
-    pct = percents([size for _, size in items])
-    width = max(len(name) for name, _ in items)
-    lines = []
-    for (name, size), p in zip(items, pct):
-        filled = max(1, round(p / 100 * BAR_WIDTH))
-        bar = "█" * filled + "░" * (BAR_WIDTH - filled)
-        lines.append(f"{name.lower().ljust(width)}  {bar}  {p:>3}%")
-    return "```\n" + "\n".join(lines) + "\n```"
 
 
 def language_badge(lang):
@@ -210,11 +155,10 @@ def now_local():
     except Exception:
         return datetime.now(timezone.utc)
 
-def update_text(old, repos, starred, counts, now):
+def update_text(old, repos, starred, now):
     repos = visible_repos(repos)
     new = old
     new = replace_section(new, "stats", section_stats(repos, starred))
-    new = replace_section(new, "languages", section_languages(counts))
     new = replace_section(new, "projects", section_projects(repos))
     if new == old:
         return None
@@ -224,10 +168,9 @@ def update_text(old, repos, starred, counts, now):
 def main():
     repos = visible_repos(get_repos())
     starred = get_starred_count()
-    counts = collect_languages(repos)
 
     old = README_PATH.read_text(encoding="utf-8")
-    new = update_text(old, repos, starred, counts, now_local())
+    new = update_text(old, repos, starred, now_local())
     if new is None:
         print("Без изменений")
         return

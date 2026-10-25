@@ -8,18 +8,7 @@
 
 <br>
 
-### most used languages
-
-<!-- languages:start -->
-```
-rust        ██████████████░░░░░░░░░░   58%
-javascript  ███░░░░░░░░░░░░░░░░░░░░░   11%
-typescript  ██░░░░░░░░░░░░░░░░░░░░░░    9%
-python      ██░░░░░░░░░░░░░░░░░░░░░░    8%
-slint       █░░░░░░░░░░░░░░░░░░░░░░░    6%
-other       ██░░░░░░░░░░░░░░░░░░░░░░    8%
-```
-<!-- languages:end -->
+![Top Languages](./profile/top-langs.svg)
 
 <br>
 
