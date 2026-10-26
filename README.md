@@ -4,7 +4,7 @@
 
 <!-- stats:start -->
 - **6** public repositories
-- **178** starred
+- **180** starred
 - **0** stars received
 <!-- stats:end -->
 
@@ -13,7 +13,7 @@
 ### projects
 
 <!-- projects:start -->
-![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr-updated**](https://github.com/neodym121/typr-updated) — open-source Speech-To-Text app on Rust
+![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr**](https://github.com/neodym121/typr) — open-source Speech-To-Text app on Rust
 
 ![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**glance**](https://github.com/neodym121/glance) — lightweight screen OCR for Windows
 
@@ -29,5 +29,5 @@
 <br>
 
 <!-- updated:start -->
-<sub>Last updated 25.10.26 23:43</sub>
+<sub>Last updated 26.10.26 18:55</sub>
 <!-- updated:end -->
