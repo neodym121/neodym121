@@ -4,7 +4,7 @@
 
 <!-- stats:start -->
 - **6** public repositories
-- **189** starred
+- **190** starred
 - **1** stars received
 <!-- stats:end -->
 
@@ -13,13 +13,13 @@
 ### projects
 
 <!-- projects:start -->
+![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr**](https://github.com/neodym121/typr) — open-source Speech-To-Text app on Rust
+
 ![typescript](https://img.shields.io/badge/typescript-3178c6?style=flat-square&logo=typescript&logoColor=white) [**fluxware**](https://github.com/neodym121/fluxware) — universal media downloader
 
 ![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**glance**](https://github.com/neodym121/glance) — lightweight screen OCR for Windows
 
 ![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**retranslator**](https://github.com/neodym121/retranslator) — local proxy that remaps AI model IDs across providers
-
-![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr**](https://github.com/neodym121/typr) — open-source Speech-To-Text app on Rust
 
 ![python](https://img.shields.io/badge/python-3572a5?style=flat-square&logo=python&logoColor=white) [**still-life**](https://github.com/neodym121/still-life) — desktop app that "misremembers" your images like the Complex from Kane Pixels' Backrooms
 
@@ -29,5 +29,5 @@
 <br>
 
 <!-- updated:start -->
-<sub>Last updated 03.11.26 19:52</sub>
+<sub>Last updated 04.11.26 19:56</sub>
 <!-- updated:end -->
