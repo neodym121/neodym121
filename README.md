@@ -4,7 +4,7 @@
 
 <!-- stats:start -->
 - **6** public repositories
-- **190** starred
+- **191** starred
 - **1** stars received
 <!-- stats:end -->
 
@@ -13,7 +13,7 @@
 ### projects
 
 <!-- projects:start -->
-![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr**](https://github.com/neodym121/typr) — open-source Speech-To-Text app on Rust
+![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr**](https://github.com/neodym121/typr) — Speech-To-Text app on Rust
 
 ![typescript](https://img.shields.io/badge/typescript-3178c6?style=flat-square&logo=typescript&logoColor=white) [**fluxware**](https://github.com/neodym121/fluxware) — universal media downloader
 
@@ -29,5 +29,5 @@
 <br>
 
 <!-- updated:start -->
-<sub>Last updated 04.11.26 19:56</sub>
+<sub>Last updated 06.11.26 19:38</sub>
 <!-- updated:end -->
