@@ -13,9 +13,9 @@
 ### projects
 
 <!-- projects:start -->
-![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr**](https://github.com/neodym121/typr) — Speech-To-Text app on Rust
-
 ![typescript](https://img.shields.io/badge/typescript-3178c6?style=flat-square&logo=typescript&logoColor=white) [**fluxware**](https://github.com/neodym121/fluxware) — universal media downloader
+
+![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr**](https://github.com/neodym121/typr) — Speech-To-Text app on Rust
 
 ![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**glance**](https://github.com/neodym121/glance) — lightweight screen OCR for Windows
 
@@ -29,5 +29,5 @@
 <br>
 
 <!-- updated:start -->
-<sub>Last updated 07.11.26 18:30</sub>
+<sub>Last updated 08.11.26 18:50</sub>
 <!-- updated:end -->
