@@ -13,11 +13,11 @@
 ### projects
 
 <!-- projects:start -->
+![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**glance**](https://github.com/neodym121/glance) — lightweight screen OCR for Windows
+
 ![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr**](https://github.com/neodym121/typr) — Speech-To-Text app on Rust
 
 ![typescript](https://img.shields.io/badge/typescript-3178c6?style=flat-square&logo=typescript&logoColor=white) [**fluxware**](https://github.com/neodym121/fluxware) — universal media downloader
-
-![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**glance**](https://github.com/neodym121/glance) — lightweight screen OCR for Windows
 
 ![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**retranslator**](https://github.com/neodym121/retranslator) — local proxy that remaps AI model IDs across providers
 
@@ -29,5 +29,5 @@
 <br>
 
 <!-- updated:start -->
-<sub>Last updated 16.11.26 22:21</sub>
+<sub>Last updated 17.11.26 21:15</sub>
 <!-- updated:end -->
