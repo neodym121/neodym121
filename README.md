@@ -3,9 +3,9 @@
 <img align="right" src="./profile/top-langs.svg" alt="Top Languages">
 
 <!-- stats:start -->
-- **6** public repositories
+- **5** public repositories
 - **213** starred
-- **5** stars received
+- **4** stars received
 <!-- stats:end -->
 
 <br clear="right">
@@ -21,13 +21,11 @@
 
 ![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**retranslator**](https://github.com/neodym121/retranslator) — local proxy that remaps AI model IDs across providers
 
-![python](https://img.shields.io/badge/python-3572a5?style=flat-square&logo=python&logoColor=white) [**still-life**](https://github.com/neodym121/still-life) — desktop app that "misremembers" your images like the Complex from Kane Pixels' Backrooms
-
 ![javascript](https://img.shields.io/badge/javascript-f1e05a?style=flat-square&logo=javascript&logoColor=black) [**translate-plus**](https://github.com/neodym121/translate-plus) — browser translator extension: select text on any page for an instant translation
 <!-- projects:end -->
 
 <br>
 
 <!-- updated:start -->
-<sub>Last updated 21.11.26 19:38</sub>
+<sub>Last updated 23.11.26 23:55</sub>
 <!-- updated:end -->
