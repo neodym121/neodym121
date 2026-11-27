@@ -3,7 +3,7 @@
 <img align="right" src="./profile/top-langs.svg" alt="Top Languages">
 
 <!-- stats:start -->
-- **6** public repositories
+- **5** public repositories
 - **217** starred
 - **4** stars received
 <!-- stats:end -->
@@ -13,8 +13,6 @@
 ### projects
 
 <!-- projects:start -->
-[**Dorion**](https://github.com/neodym121/Dorion) — tiny alternative Discord client with a smaller footprint, snappier startup, themes…
-
 ![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**typr**](https://github.com/neodym121/typr) — Speech-To-Text app on Rust
 
 ![rust](https://img.shields.io/badge/rust-dea584?style=flat-square&logo=rust&logoColor=black) [**glance**](https://github.com/neodym121/glance) — lightweight screen OCR for Windows
@@ -29,5 +27,5 @@
 <br>
 
 <!-- updated:start -->
-<sub>Last updated 27.11.26 21:44</sub>
+<sub>Last updated 27.11.26 22:01</sub>
 <!-- updated:end -->
